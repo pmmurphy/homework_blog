@@ -1,8 +1,11 @@
 <h2>All Users</h2>
+
+
 <% @users.each do |user| %>
 	<h3><%= user.username %></h3>
 	<%= link_to "Show User", user_path(user) %>
 	<%= link_to "Edit User", edit_user_path(user)%>
+
 
 <% end %>	
 <br>

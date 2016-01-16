@@ -1,5 +1,7 @@
 <h2>Sign Up</h2>
 
+<div class="form">
+
 <%= form_for @user do |f| %>
 	<%=f.label :username %>
 	<%=f.text_field :username %>
@@ -8,4 +10,6 @@
 	<%=f.text_field :password %>
 
 	<%=f.submit %>
+
+</div>	
 	<% end %>
